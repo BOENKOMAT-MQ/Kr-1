@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог наушников — Тембр</title>
+  <meta name="description" content="Каталог наушников Тембр: студийные, беспроводные и спортивные модели.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">Тембр</a>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a> / Каталог</nav>
+    <h1 class="section__title">Каталог</h1>
+    <div class="catalog-layout">
+      <aside class="filters" aria-label="Фильтры">
+        <h2 class="filters__title">Фильтры</h2>
+        <fieldset class="filters__group">
+          <legend class="filters__legend">Категория</legend>
+          <label class="filters__label"><input type="checkbox" name="cat" value="studio"> Студийные</label>
+          <label class="filters__label"><input type="checkbox" name="cat" value="wireless"> Беспроводные</label>
+          <label class="filters__label"><input type="checkbox" name="cat" value="sport"> Спортивные</label>
+        </fieldset>
+        <label class="filters__label" for="price">Цена</label>
+        <select class="filters__select" id="price" name="price">
+          <option>Любая</option><option>до 5 000 ₽</option><option>5 000–10 000 ₽</option>
+        </select>
+        <button class="button filters__button" type="button" disabled>Применить (макет)</button>
+      </aside>
+      <section class="catalog-grid" aria-label="Список товаров">
+        <article class="product-card">
+          <span class="product-card__badge">Хит</span>
+          <img class="product-card__image" src="images/headphones.svg" alt="Тембр Studio 1" width="320" height="200">
+          <h3 class="product-card__title">Тембр Studio 1</h3>
+          <p class="product-card__description">Закрытые студийные наушники, 40 мм.</p>
+          <p class="product-card__price">7 990 ₽</p>
+          <a class="button product-card__button" href="product.html">Подробнее</a>
+        </article>
+        <article class="product-card">
+          <span class="product-card__badge">Новинка</span>
+          <img class="product-card__image" src="images/headphones.svg" alt="Тембр Air" width="320" height="200">
+          <h3 class="product-card__title">Тембр Air</h3>
+          <p class="product-card__description">Беспроводные, до 40 часов работы.</p>
+          <p class="product-card__price">9 490 ₽</p>
+          <a class="button product-card__button" href="product.html">Подробнее</a>
+        </article>
+        <article class="product-card product-card--discount">
+          <span class="product-card__badge">Скидка</span>
+          <img class="product-card__image" src="images/headphones.svg" alt="Тембр Sport" width="320" height="200">
+          <h3 class="product-card__title">Тембр Sport</h3>
+          <p class="product-card__description">Вкладыши с защитой от влаги IPX5.</p>
+          <p class="product-card__price"><s class="product-card__old-price">5 990 ₽</s> 4 490 ₽</p>
+          <a class="button product-card__button" href="product.html">Подробнее</a>
+        </article>
+        <article class="product-card">
+          
+          <img class="product-card__image" src="images/headphones.svg" alt="Тембр Studio 2" width="320" height="200">
+          <h3 class="product-card__title">Тембр Studio 2</h3>
+          <p class="product-card__description">Открытые мониторные, 50 мм.</p>
+          <p class="product-card__price">12 900 ₽</p>
+          <a class="button product-card__button" href="product.html">Подробнее</a>
+        </article>
+        <article class="product-card">
+          
+          <img class="product-card__image" src="images/headphones.svg" alt="Тембр Air Mini" width="320" height="200">
+          <h3 class="product-card__title">Тембр Air Mini</h3>
+          <p class="product-card__description">Компактные TWS с шумоподавлением.</p>
+          <p class="product-card__price">6 290 ₽</p>
+          <a class="button product-card__button" href="product.html">Подробнее</a>
+        </article>
+        <article class="product-card">
+          <span class="product-card__badge">Новинка</span>
+          <img class="product-card__image" src="images/headphones.svg" alt="Тембр Kids" width="320" height="200">
+          <h3 class="product-card__title">Тембр Kids</h3>
+          <p class="product-card__description">Ограничение громкости 85 дБ.</p>
+          <p class="product-card__price">2 990 ₽</p>
+          <a class="button product-card__button" href="product.html">Подробнее</a>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p class="site-footer__text">© 2026 «Тембр» — учебный проект (КР №1).
+      <a class="site-footer__link" href="index.html#contacts">Контакты</a></p>
+  </footer>
+  <a class="to-top" href="#top">Наверх</a>
+
+</body>
+</html>

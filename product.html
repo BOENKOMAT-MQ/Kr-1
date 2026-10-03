@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тембр Studio 1 — карточка товара</title>
+  <meta name="description" content="Тембр Studio 1: закрытые студийные наушники. Характеристики, цена, заявка.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">Тембр</a>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a> / <a class="breadcrumbs__link" href="catalog.html">Каталог</a> / Studio 1</nav>
+    <div class="product-page">
+      <article class="product-page__main">
+        <img class="product-page__image" src="images/headphones.svg" alt="Наушники Тембр Studio 1" width="320" height="200">
+        <div class="product-page__info">
+          <h1 class="product-page__title">Тембр Studio 1</h1>
+          <p>Закрытые студийные наушники с точной сценой и съёмным кабелем. Подходят для работы со звуком и долгого прослушивания.</p>
+          <p class="product-page__price">7 990 ₽</p>
+          <div class="product-page__actions">
+            <button class="button" type="button" data-modal-open="order-modal">Оставить заявку</button>
+            <a class="button button--secondary" href="order.html">Полная форма</a>
+          </div>
+        </div>
+        <section class="product-page__specs">
+          <h2 class="section__title">Характеристики</h2>
+          <table class="specs-table">
+            <caption class="specs-table__caption">Сравнение комплектаций</caption>
+            <thead><tr><th scope="col">Параметр</th><th scope="col">Базовая</th><th scope="col">Pro</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Драйвер</th><td>40 мм</td><td>50 мм</td></tr>
+              <tr><th scope="row">Частоты</th><td>10–30 000 Гц</td><td>5–40 000 Гц</td></tr>
+              <tr><th scope="row">Кабель</th><td>1 шт.</td><td>3 шт.</td></tr>
+              <tr><th scope="row">Цена</th><td>7 990 ₽</td><td>11 490 ₽</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+      <aside class="product-page__aside">
+        <h2 class="product-page__aside-title">Доставка</h2>
+        <p>Курьером — 1–3 дня, от 300 ₽. Самовывоз — бесплатно. Возврат — 30 дней.</p>
+      </aside>
+    </div>
+    <dialog class="modal" id="order-modal" aria-labelledby="modal-title">
+      <form class="order-form" method="dialog">
+        <h2 class="modal__title" id="modal-title">Заявка на Studio 1</h2>
+        <div class="order-form__field"><label class="order-form__label" for="m-name">Имя</label>
+          <input class="order-form__input" id="m-name" name="name" type="text" required></div>
+        <div class="order-form__field"><label class="order-form__label" for="m-phone">Телефон</label>
+          <input class="order-form__input" id="m-phone" name="phone" type="tel" required></div>
+        <div class="order-form__actions">
+          <button class="button" type="submit">Отправить</button>
+          <button class="button button--secondary" type="button" data-modal-close>Закрыть</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  <footer class="site-footer">
+    <p class="site-footer__text">© 2026 «Тембр» — учебный проект (КР №1).
+      <a class="site-footer__link" href="index.html#contacts">Контакты</a></p>
+  </footer>
+  <a class="to-top" href="#top">Наверх</a>
+  <script src="js/main.js"></script>
+</body>
+</html>
